@@ -1,0 +1,12 @@
+{
+  "minimum_chrome_version": "48.0",
+  "manifest_version": 2,
+  "name": "Github Prev. Commits",
+  "version": "0.1",
+  "description": "Show the number and link of previous commits in https://github.com/pulls page.",
+  "content_scripts": [{
+      "matches": [ "https://github.com/pulls/*"],
+      "all_frames": true,
+      "js": ["jquery-2.2.0.min.js", "prev-commits.js"]
+  }]
+}
